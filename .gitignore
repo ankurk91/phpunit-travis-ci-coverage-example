@@ -1,0 +1,63 @@
+# https://github.com/github/gitignore
+# https://www.gitignore.io/
+# http://git-scm.com/docs/gitignore
+
+# phpstorm, webstorm
+.idea/
+
+# sublime and other ide
+.project
+*.sublime-project
+*.sublime-workspace
+.brackets.json
+_notes/
+
+# logs
+logs/
+*.log
+npm-debug.log*
+error_log
+
+
+# OS generated files
+[Tt]humbs.db
+ehthumbs.db
+*~
+.*~
+._*
+*.bak
+
+# Recycle bin folder used by different os
+.Trash-*
+$RECYCLE.BIN/
+
+
+# Windows shortcuts
+*.lnk
+
+
+# Folder config file
+[Dd]esktop.ini
+*.DS_store
+.DS_store?
+
+
+# node packages
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules/
+
+
+# bower packages
+bower_components/
+
+# svn folders
+.svn/
+
+# composer
+vendor/
+composer.phar
+
+# project
+phpunit.phar
+coveralls.phar
+build/
