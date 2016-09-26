@@ -1,6 +1,6 @@
 <?php
 
-namespace Ankur;
+namespace Projects\Ankur;
 
 class Calculator
 {
@@ -43,13 +43,13 @@ class Calculator
 
     /**
      * Divide two numbers
+     * //TODO Handle divide by zero
      * @param $x
      * @param $y
      * @return float
      */
     public function divideTwo($x, $y)
     {
-        //TODO Handle divide by zero
         return $x / $y;
     }
 

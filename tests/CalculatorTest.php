@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-namespace Ankur;
+use Projects\Ankur as App;
 
 
 class CalculatorTest extends \PHPUnit_Framework_TestCase
@@ -11,11 +11,12 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
 
     private function getInstance()
     {
-        return new Calculator();
+        return new App\Calculator();
     }
 
     public function testAdd()
     {
+        fwrite(STDOUT, __METHOD__ . "\n");
         $obj = $this->getInstance();
         $value = $obj->addTwo(2, 3);
         $this->assertEquals($value, 5);
@@ -23,6 +24,7 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
 
     public function testMultiply()
     {
+        fwrite(STDOUT, __METHOD__ . "\n");
         $obj = $this->getInstance();
         $value = $obj->multiplyTwo(2, 3);
         $this->assertEquals($value, 6);
@@ -30,6 +32,7 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
 
     public function testSubtract()
     {
+        fwrite(STDOUT, __METHOD__ . "\n");
         $obj = $this->getInstance();
         $value = $obj->subtractTwo(4, 2);
         $this->assertEquals($value, 2);

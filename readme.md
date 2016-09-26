@@ -11,6 +11,12 @@
 * [php-coveralls](https://github.com/satooshi/php-coveralls) v1.0.1
 * php Xdebug extension
 
+### Test on localhost
+```
+cd path/to/this-project
+phpunit
+```
+
 #### Reference Links
 * https://docs.travis-ci.com/
 * https://github.com/satooshi/php-coveralls
