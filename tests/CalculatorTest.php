@@ -4,7 +4,10 @@ namespace Tests;
 
 use Projects\Ankur as App;
 
-
+/**
+ * Class CalculatorTest
+ * @package Tests
+ */
 class CalculatorTest extends \PHPUnit_Framework_TestCase
 {
 

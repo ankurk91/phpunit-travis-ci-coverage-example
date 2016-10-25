@@ -2,9 +2,18 @@
 
 namespace Projects\Ankur;
 
+/**
+ * Class Calculator
+ * @package Projects\Ankur
+ */
 class Calculator
 {
 
+
+    public function __construct()
+    {
+        // do something
+    }
 
     /**
      * Add two numbers

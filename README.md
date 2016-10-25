@@ -6,7 +6,7 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/57ad5bab89a9740034ca1916/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57ad5bab89a9740034ca1916)
 
 ### Prerequisites
-* php 5.3.2+
+* php v5.6.26+
 * [phpunit](https://github.com/sebastianbergmann/phpunit/) v5.4.6
 * [php-coveralls](https://github.com/satooshi/php-coveralls) v1.0.1
 * php Xdebug extension
@@ -17,7 +17,7 @@ cd path/to/this-project
 phpunit
 ```
 
-#### Reference Links
+#### Resources
 * https://docs.travis-ci.com/
 * https://github.com/satooshi/php-coveralls
 * http://code.tutsplus.com/tutorials/travis-ci-what-why-how--net-34771

@@ -22,7 +22,7 @@
 
 
 # Export ignores
-tests export-ignore
+#tests export-ignore
 
 # https://github.com/github/linguist#using-gitattributes
 node_modules/ linguist-vendored=false
