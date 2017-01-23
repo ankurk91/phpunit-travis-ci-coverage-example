@@ -3,13 +3,13 @@
 
 [![Build Status](https://travis-ci.org/ankurk91/phpunit-travis-ci-coveralls-example.svg?branch=master)](https://travis-ci.org/ankurk91/phpunit-travis-ci-coveralls-example)
 [![Coverage Status](https://coveralls.io/repos/github/ankurk91/phpunit-travis-ci-coveralls-example/badge.svg?branch=master)](https://coveralls.io/github/ankurk91/phpunit-travis-ci-coveralls-example?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/57ad5bab89a9740034ca1916/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57ad5bab89a9740034ca1916)
+
 
 ### Prerequisites
-* php v5.6.26+
+* php v5.6.26+ || v7.0+
 * [phpunit](https://github.com/sebastianbergmann/phpunit/) v5.4.6
 * [php-coveralls](https://github.com/satooshi/php-coveralls) v1.0.1
-* php Xdebug extension
+* php [Xdebug](https://xdebug.org/) extension
 
 ### Test on localhost
 ```
@@ -32,7 +32,7 @@ phpunit
 * [https://phpunit.de/](https://phpunit.de/)
 * [https://travis-ci.org/](https://travis-ci.org/)
 * [https://coveralls.io/](https://coveralls.io/)
-* [https://www.versioneye.com](https://www.versioneye.com)
+
 
 #### License
 [MIT](LICENSE.txt) License

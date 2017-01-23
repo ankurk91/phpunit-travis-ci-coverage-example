@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample page</title>
+  <meta charset="utf-8">
+</head>
+<body>
 <?php
 
 require('../vendor/autoload.php');
@@ -12,4 +19,5 @@ echo $obj->multiplyTwo(2, 3);
 
 ?>
 This is just a sample page.
-
+</body>
+</html>

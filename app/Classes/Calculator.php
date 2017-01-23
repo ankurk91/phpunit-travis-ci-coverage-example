@@ -17,6 +17,7 @@ class Calculator
 
     /**
      * Add two numbers
+     *
      * @param $x
      * @param $y
      * @return mixed
@@ -28,6 +29,7 @@ class Calculator
 
     /**
      * Multiply two numbers
+     *
      * @param $x
      * @param $y
      * @return mixed
@@ -40,6 +42,7 @@ class Calculator
 
     /**
      * Subtract two numbers
+     *
      * @param $x
      * @param $y
      * @return mixed
@@ -53,6 +56,7 @@ class Calculator
     /**
      * Divide two numbers
      * //TODO Handle divide by zero
+     *
      * @param $x
      * @param $y
      * @return float
