@@ -6,15 +6,16 @@
 
 
 ### Prerequisites
-* php v5.6.26+ || v7.0+
-* [phpunit](https://github.com/sebastianbergmann/phpunit/) v5.4.6
+* php v7.0+, [requirements](https://phpunit.de/manual/current/en/installation.html#installation.requirements)
+* [phpunit](https://github.com/sebastianbergmann/phpunit/) v5.6.0
 * [php-coveralls](https://github.com/satooshi/php-coveralls) v1.0.1
-* php [Xdebug](https://xdebug.org/) extension
+* php [Xdebug](https://xdebug.org/) extension v2.5.0+
 
 ### Test on localhost
 ```
 cd path/to/this-project
-phpunit
+composer install
+composer run test
 ```
 
 #### Resources

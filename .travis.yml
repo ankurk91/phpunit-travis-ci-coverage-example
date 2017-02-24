@@ -14,14 +14,11 @@ git:
 
 # Define the php versions against we want to test our code
 php:
-    - 5.6
     - 7.0
 
 
 matrix:
   fast_finish: true
-  allow_failures:
-    - php: 7.0
 
 
 # We don't want to run linux commands as super user
@@ -45,7 +42,7 @@ before_script:
 
 # Testing the app (see phpunit.xml), generating Code Coverage report
 script:
-  - phpunit --coverage-clover build/logs/clover.xml
+  - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
 
 #after_script:

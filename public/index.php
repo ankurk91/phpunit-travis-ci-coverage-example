@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sample page</title>
+  <title>Calculator app</title>
   <meta charset="utf-8">
 </head>
 <body>
@@ -18,6 +18,6 @@ echo "<br>";
 echo $obj->multiplyTwo(2, 3);
 
 ?>
-This is just a sample page.
+<h1>This is just a sample demo page.</h1>
 </body>
 </html>

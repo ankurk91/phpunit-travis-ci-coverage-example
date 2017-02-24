@@ -55,7 +55,7 @@ class Calculator
 
     /**
      * Divide two numbers
-     * //TODO Handle divide by zero
+     * //todo Handle divide by zero
      *
      * @param $x
      * @param $y

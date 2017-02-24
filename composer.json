@@ -10,11 +10,15 @@
   "require": {
   },
   "require-dev": {
+    "phpunit/phpunit": "^6.0"
   },
   "autoload": {
     "classmap": [
       "app/Classes"
     ]
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
   },
   "config": {
     "preferred-install": "dist",
