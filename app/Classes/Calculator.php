@@ -3,23 +3,21 @@
 namespace Projects\Ankur;
 
 /**
- * Class Calculator
- * @package Projects\Ankur
+ * Class Calculator.
  */
 class Calculator
 {
-
-
     public function __construct()
     {
         // do something
     }
 
     /**
-     * Add two numbers
+     * Add two numbers.
      *
      * @param $x
      * @param $y
+     *
      * @return mixed
      */
     public function addTwo($x, $y)
@@ -28,12 +26,12 @@ class Calculator
     }
 
     /**
-     * Multiply two numbers
+     * Multiply two numbers.
      *
      * @param $x
      * @param $y
-     * @return mixed
      *
+     * @return mixed
      */
     public function multiplyTwo($x, $y)
     {
@@ -41,12 +39,12 @@ class Calculator
     }
 
     /**
-     * Subtract two numbers
+     * Subtract two numbers.
      *
      * @param $x
      * @param $y
-     * @return mixed
      *
+     * @return mixed
      */
     public function subtractTwo($x, $y)
     {
@@ -55,15 +53,15 @@ class Calculator
 
     /**
      * Divide two numbers
-     * //todo Handle divide by zero
+     * //todo Handle divide by zero.
      *
      * @param $x
      * @param $y
+     *
      * @return float
      */
     public function divideTwo($x, $y)
     {
         return $x / $y;
     }
-
 }

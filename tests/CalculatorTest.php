@@ -6,13 +6,10 @@ use PHPUnit\Framework\TestCase;
 use Projects\Ankur as App;
 
 /**
- * Class CalculatorTest
- * @package Tests
+ * Class CalculatorTest.
  */
 class CalculatorTest extends TestCase
 {
-
-
     private function getInstance()
     {
         return new App\Calculator();
@@ -20,7 +17,7 @@ class CalculatorTest extends TestCase
 
     public function testAdd()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
+        fwrite(STDOUT, __METHOD__."\n");
         $obj = $this->getInstance();
         $value = $obj->addTwo(2, 3);
         $this->assertEquals($value, 5);
@@ -28,7 +25,7 @@ class CalculatorTest extends TestCase
 
     public function testMultiply()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
+        fwrite(STDOUT, __METHOD__."\n");
         $obj = $this->getInstance();
         $value = $obj->multiplyTwo(2, 3);
         $this->assertEquals($value, 6);
@@ -36,10 +33,9 @@ class CalculatorTest extends TestCase
 
     public function testSubtract()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
+        fwrite(STDOUT, __METHOD__."\n");
         $obj = $this->getInstance();
         $value = $obj->subtractTwo(4, 2);
         $this->assertEquals($value, 2);
     }
-
 }
