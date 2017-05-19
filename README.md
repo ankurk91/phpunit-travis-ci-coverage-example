@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/ankurk91/phpunit-travis-ci-coveralls-example.svg?branch=master)](https://travis-ci.org/ankurk91/phpunit-travis-ci-coveralls-example)
 [![Coverage Status](https://coveralls.io/repos/github/ankurk91/phpunit-travis-ci-coveralls-example/badge.svg?branch=master)](https://coveralls.io/github/ankurk91/phpunit-travis-ci-coveralls-example?branch=master)
-
+[![codecov](https://codecov.io/gh/ankurk91/phpunit-travis-ci-coveralls-example/branch/master/graph/badge.svg)](https://codecov.io/gh/ankurk91/phpunit-travis-ci-coveralls-example)
 
 ### Prerequisites
 * php v7.0+, [requirements](https://phpunit.de/manual/current/en/installation.html#installation.requirements)
