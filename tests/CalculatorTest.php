@@ -10,32 +10,42 @@ use Projects\Ankur as App;
  */
 class CalculatorTest extends TestCase
 {
-    private function getInstance()
+    /**
+     * Calculator class instance
+     *
+     * @var App\Calculator
+     */
+    private $calc;
+
+    public function __construct()
     {
-        return new App\Calculator();
+        $this->calc = new App\Calculator();
+        parent::__construct();
     }
 
     public function testAdd()
     {
-        fwrite(STDOUT, __METHOD__."\n");
-        $obj = $this->getInstance();
-        $value = $obj->addTwo(2, 3);
+        fwrite(STDOUT, __METHOD__ . "\n");
+
+        $value = $this->calc->addTwo(2, 3);
         $this->assertEquals($value, 5);
     }
 
     public function testMultiply()
     {
-        fwrite(STDOUT, __METHOD__."\n");
-        $obj = $this->getInstance();
-        $value = $obj->multiplyTwo(2, 3);
+        fwrite(STDOUT, __METHOD__ . "\n");
+
+        $value = $this->calc->multiplyTwo(2, 3);
         $this->assertEquals($value, 6);
     }
 
     public function testSubtract()
     {
-        fwrite(STDOUT, __METHOD__."\n");
-        $obj = $this->getInstance();
-        $value = $obj->subtractTwo(4, 2);
+        fwrite(STDOUT, __METHOD__ . "\n");
+
+        $value = $this->calc->subtractTwo(4, 2);
         $this->assertEquals($value, 2);
     }
+
+    // Left divide function intentionally
 }

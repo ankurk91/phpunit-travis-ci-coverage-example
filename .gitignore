@@ -25,6 +25,7 @@ ehthumbs.db
 .*~
 ._*
 *.bak
+*.swp
 
 # Recycle bin folder used by different os
 .Trash-*
@@ -37,8 +38,8 @@ $RECYCLE.BIN/
 
 # Folder config file
 [Dd]esktop.ini
-*.DS_store
-.DS_store?
+*.DS_Store
+.DS_Store?
 
 
 # node packages
@@ -53,10 +54,10 @@ bower_components/
 .svn/
 
 # composer
-vendor/
+/vendor/
 composer.phar
 
-# project
+# Project
 phpunit.phar
 coveralls.phar
-build/
+/build/
