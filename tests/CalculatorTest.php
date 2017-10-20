@@ -3,7 +3,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Projects\Ankur as App;
+use Projects\Ankur\Calculator;
 
 /**
  * Class CalculatorTest.
@@ -13,14 +13,20 @@ class CalculatorTest extends TestCase
     /**
      * Calculator class instance
      *
-     * @var App\Calculator
+     * @var Projects\Ankur\Calculator
      */
     private $calc;
 
     public function __construct()
     {
-        $this->calc = new App\Calculator();
+        $this->calc = new Calculator();
         parent::__construct();
+    }
+
+    public function testInstanceCalculator()
+    {
+        $this->calc = new Calculator();
+        $this->assertInstanceOf(Calculator::class, $this->calc);
     }
 
     public function testAdd()
@@ -47,5 +53,19 @@ class CalculatorTest extends TestCase
         $this->assertEquals($value, 2);
     }
 
-    // Left divide function intentionally
+    public function testNormalDivide()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+
+        $value = $this->calc->divideTwo(4, 2);
+        $this->assertEquals($value, 2);
+    }
+
+    public function testDivisorHasZero()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+
+        $this->expectException(\InvalidArgumentException::class);
+        $value = $this->calc->divideTwo(4, 0);  
+    }
 }
