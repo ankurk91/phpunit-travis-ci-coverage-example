@@ -1,19 +1,20 @@
-# phpUnit Testing, Travis CI and Coveralls
+# phpUnit Testing on Travis CI with Code Coverage
 
-> An example repo to get started with phpUnit 
+> An example repo to get started with phpUnit on CI server
 
-[![Build Status](https://travis-ci.org/ankurk91/phpunit-travis-ci-coveralls-example.svg?branch=master)](https://travis-ci.org/ankurk91/phpunit-travis-ci-coveralls-example)
-[![Coveralls](https://coveralls.io/repos/github/ankurk91/phpunit-travis-ci-coveralls-example/badge.svg?branch=master)](https://coveralls.io/github/ankurk91/phpunit-travis-ci-coveralls-example?branch=master)
-[![CodeCov](https://codecov.io/gh/ankurk91/phpunit-travis-ci-coveralls-example/branch/master/graph/badge.svg)](https://codecov.io/gh/ankurk91/phpunit-travis-ci-coveralls-example)
+[![Build Status](https://travis-ci.org/ankurk91/phpunit-travis-ci-coverage-example.svg?branch=master)](https://travis-ci.org/ankurk91/phpunit-travis-ci-coverage-example)
+[![Coveralls](https://coveralls.io/repos/github/ankurk91/phpunit-travis-ci-coverage-example/badge.svg?branch=master)](https://coveralls.io/github/ankurk91/phpunit-travis-ci-coverage-example?branch=master)
+[![CodeCov](https://codecov.io/gh/ankurk91/phpunit-travis-ci-coverage-example/branch/master/graph/badge.svg)](https://codecov.io/gh/ankurk91/phpunit-travis-ci-coverage-example)
 
 ## Prerequisites
-* php v7.0+, see [requirements](https://phpunit.de/manual/current/en/installation.html#installation.requirements)
-* [phpUnit](https://github.com/sebastianbergmann/phpunit/) v6.2.0
-* [php-coveralls](https://github.com/satooshi/php-coveralls) v1.0.1
-* php [Xdebug](https://xdebug.org/) extension v2.5.0+
+* php v7.1+, see [requirements](https://phpunit.de/manual/current/en/installation.html#installation.requirements)
+* [phpUnit](https://github.com/sebastianbergmann/phpunit/) v6.5.5
+* [php-coveralls](https://github.com/satooshi/php-coveralls) v2.0.0
+* php [Xdebug](https://xdebug.org/) extension v2.5.5+
+* [composer](https://getcomposer.org/download/) v1.6+
 
 ## Test on localhost
-```sh
+```
 cd path/to/this-project
 composer install
 composer run test

@@ -3,7 +3,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Projects\Ankur\Calculator;
+use Projects\Maths\Calculator;
 
 /**
  * Class CalculatorTest.
@@ -13,7 +13,7 @@ class CalculatorTest extends TestCase
     /**
      * Calculator class instance
      *
-     * @var Projects\Ankur\Calculator
+     * @var \Projects\Maths\Calculator
      */
     private $calc;
 
@@ -25,47 +25,36 @@ class CalculatorTest extends TestCase
 
     public function testInstanceCalculator()
     {
-        $this->calc = new Calculator();
         $this->assertInstanceOf(Calculator::class, $this->calc);
     }
 
     public function testAdd()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
-
-        $value = $this->calc->addTwo(2, 3);
+        $value = $this->calc->add(2, 3);
         $this->assertEquals($value, 5);
     }
 
     public function testMultiply()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
-
-        $value = $this->calc->multiplyTwo(2, 3);
+        $value = $this->calc->multiply(2, 3);
         $this->assertEquals($value, 6);
     }
 
     public function testSubtract()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
-
-        $value = $this->calc->subtractTwo(4, 2);
+        $value = $this->calc->subtract(4, 2);
         $this->assertEquals($value, 2);
     }
 
     public function testNormalDivide()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
-
-        $value = $this->calc->divideTwo(4, 2);
+        $value = $this->calc->divide(4, 2);
         $this->assertEquals($value, 2);
     }
 
-    public function testDivisorHasZero()
+    public function testDivisorCanNotBeZero()
     {
-        fwrite(STDOUT, __METHOD__ . "\n");
-
         $this->expectException(\InvalidArgumentException::class);
-        $value = $this->calc->divideTwo(4, 0);  
+        $this->calc->divide(4, 0);
     }
 }

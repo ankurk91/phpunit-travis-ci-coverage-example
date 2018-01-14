@@ -9,7 +9,7 @@
 *.sublime-project
 *.sublime-workspace
 .brackets.json
-_notes/
+.vscode
 
 # logs
 logs/
@@ -50,9 +50,6 @@ node_modules/
 # bower packages
 bower_components/
 
-# svn folders
-.svn/
-
 # composer
 /vendor/
 composer.phar
@@ -61,3 +58,4 @@ composer.phar
 phpunit.phar
 coveralls.phar
 /build/
+.env

@@ -1,7 +1,7 @@
 <?php
 require '../vendor/autoload.php';
 
-use Projects\Ankur\Calculator;
+use Projects\Maths\Calculator;
 
 $calc = new Calculator();
 ?>
@@ -16,9 +16,9 @@ $calc = new Calculator();
 <hr>
 <?php
 
-echo $calc->addTwo(2, 3);
+echo $calc->add(2, 3);
 echo '<br>';
-echo $calc->multiplyTwo(2, 3);
+echo $calc->multiply(2, 3);
 
 ?>
 </body>

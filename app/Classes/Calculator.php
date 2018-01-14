@@ -1,17 +1,12 @@
 <?php
 
-namespace Projects\Ankur;
+namespace Projects\Maths;
 
 /**
  * Class Calculator.
  */
 class Calculator
 {
-    public function __construct()
-    {
-        // do something
-    }
-
     /**
      * Add two numbers.
      *
@@ -20,7 +15,7 @@ class Calculator
      *
      * @return mixed
      */
-    public function addTwo($x, $y)
+    public function add($x, $y)
     {
         return $x + $y;
     }
@@ -33,7 +28,7 @@ class Calculator
      *
      * @return mixed
      */
-    public function multiplyTwo($x, $y)
+    public function multiply($x, $y)
     {
         return $x * $y;
     }
@@ -46,7 +41,7 @@ class Calculator
      *
      * @return mixed
      */
-    public function subtractTwo($x, $y)
+    public function subtract($x, $y)
     {
         return $x - $y;
     }
@@ -59,9 +54,9 @@ class Calculator
      *
      * @return float
      */
-    public function divideTwo($x, $y)
+    public function divide($x, $y)
     {
-        if($y === 0) {
+        if ($y === 0) {
             throw new \InvalidArgumentException("The divisor cannot be zero!");
         }
         return $x / $y;
