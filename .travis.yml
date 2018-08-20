@@ -39,13 +39,14 @@ after_success:
 
 #after_failure:
 
-# Tell Travis CI to monitor only 'master' branch
+# Monitor only these branches
 branches:
-  only: master
+  only:
+  - master
+  - dev
 
 # You can delete the cache using travis-ci web interface
 cache:
   directories:
-  - vendor
-  - $HOME/.cache/composer
+    - $HOME/.composer/cache
 
