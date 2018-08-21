@@ -1,4 +1,3 @@
-# https://github.com/github/gitignore
 # http://git-scm.com/docs/gitignore
 
 # phpstorm, webstorm
@@ -6,17 +5,17 @@
 
 # sublime and other ide
 .project
-*.sublime-project
-*.sublime-workspace
+*.sublime-*
 .brackets.json
 .vscode
 
-# logs
-logs/
+# logs and cache
+/logs/
 *.log
 npm-debug.log*
-error_log
-
+.sass-cache
+.cache
+.php_cs.cache
 
 # OS generated files
 [Tt]humbs.db
@@ -25,30 +24,24 @@ ehthumbs.db
 .*~
 ._*
 *.bak
+*.save
 *.swp
 
 # Recycle bin folder used by different os
 .Trash-*
 $RECYCLE.BIN/
 
-
 # Windows shortcuts
 *.lnk
-
 
 # Folder config file
 [Dd]esktop.ini
 *.DS_Store
 .DS_Store?
 
-
 # node packages
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules/
-
-
-# bower packages
-bower_components/
 
 # composer
 /vendor/
@@ -56,6 +49,7 @@ composer.phar
 
 # Project
 phpunit.phar
-coveralls.phar
+.phpunit.result.cache
+phpunit.xml
 /build/
 .env
