@@ -1,5 +1,4 @@
 # Config file for https://travis-ci.org/
-# Validate this file here - http://lint.travis-ci.org/
 
 language: php
 
@@ -11,7 +10,6 @@ php:
 # Note: Code coverage requires php-xDebug extension enabled on CI server
 
 install:
-- travis_retry composer self-update
 - travis_retry composer install --no-interaction --no-suggest
 
 # Testing the app (see phpunit.xml) for configs, generating Code Coverage report

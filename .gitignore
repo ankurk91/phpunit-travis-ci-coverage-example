@@ -1,9 +1,7 @@
 # http://git-scm.com/docs/gitignore
 
-# phpstorm, webstorm
-.idea/
-
 # sublime and other ide
+.idea/
 .project
 *.sublime-*
 .brackets.json
@@ -40,7 +38,6 @@ $RECYCLE.BIN/
 .DS_Store?
 
 # node packages
-# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules/
 
 # composer
